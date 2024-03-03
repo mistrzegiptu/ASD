@@ -10,8 +10,8 @@ def findFirstError(T):
         else:
             r = mid
     
-        if T[mid+1] - T[mid] > 1:
-            return T[mid] + 1
+    if T[mid+1] - T[mid] > 1:
+        return T[mid] + 1
         
     return -1
 
