@@ -43,7 +43,8 @@ def getIndex(T, x):
             left = mid + 1
         else:
             right = mid - 1
-    return -1
+    return left
+
 def ksum(T, k, p):
     n = len(T)
     resultSum = 0
@@ -59,10 +60,12 @@ def ksum(T, k, p):
         x = T[i]
         index = getIndex(A, T[l])
         A.pop(index)
-        j = 0
+        #I'm an idiot...
+        '''j = 0
         while j < p-1 and A[j] < x:
             j += 1
-        A.insert(j, x)
+        A.insert(j, x)'''
+        A.insert(getIndex(A, x), x)
         l += 1
     return resultSum+A[p-k]
 
