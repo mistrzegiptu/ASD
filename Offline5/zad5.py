@@ -1,3 +1,8 @@
+''' Franciszek Jawor
+Rozwiązanie korzysta z algorytmu Dijktry i gdy natrafi na planetę będącą przy osobliwości,
+porównuje drogę do każdej z tych planet i dodaje je do kolejki priorytetowej.
+Złożoność czasową szacuję na O(E log(V+S))
+'''
 from zad5testy import runtests
 from _collections import defaultdict
 import heapq
