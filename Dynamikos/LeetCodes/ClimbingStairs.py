@@ -1,4 +1,4 @@
-def minCostClimbingStairs(self, cost):
+def minCostClimbingStairs(cost):
     n = len(cost)
     dp = [float('inf')] * n
     dp[0] = cost[0]
