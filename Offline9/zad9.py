@@ -1,3 +1,9 @@
+''' Franciszek Jawor
+Rozwiązanie wykorzystuje podejście dynamiczne, zapisując maksymalną ilość pól, które możemy odwiedzić przed wejściem na dane pole,
+w celu przejścia po każdym polu wykorzystuję DFS i sprawdzam czy wynik nie jest już zapisany w tablicy
+
+Złożoność czasową, jak i pamięciową szacuję na O(n*m)
+'''
 from zad9testy import runtests
 def trip(M):
   m = len(M)
